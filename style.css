@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url(Manrope/static/Manrope-Light.ttf);
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
-  font-family: myfont;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 #main {
@@ -47,6 +54,6 @@ body {
 }
 
 #nav-elem h4 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
 }
