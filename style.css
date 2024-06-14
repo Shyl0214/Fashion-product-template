@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Mulish", sans-serif;
+  font-family: Kugile;
 }
 
 #main {
@@ -29,7 +28,8 @@ body {
   /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 0px 30px;
+  padding-top: 10px;
 }
 
 #logo {
@@ -50,13 +50,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 22px;
 }
 
 #nav-elem h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 #nav-elem span {
@@ -68,18 +68,17 @@ body {
 #nav-bar-2 {
   width: 100%;
   height: 50px;
-  padding: 0px 40px;
+  padding: 0px 30px;
   /* background-color: rgb(221, 149, 149); */
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 35px;
 }
 
 #nav-bar-2 h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 1px;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 /* content */
@@ -88,14 +87,14 @@ body {
   width: 100%;
   height: calc(100% - 100px);
   /* background-color: cadetblue; */
-  padding: 0px 40px;
+  /* padding: 0px 20px; */
 }
 
 #info-content {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  height: 40%;
+  height: 45%;
   overflow-x: auto;
   /* background-color: aqua; */
 }
@@ -112,17 +111,46 @@ body {
 .elem {
   width: 53%;
   height: 100%;
-  /* background-color: red; */
-  /* border: 2px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* padding: 40px; */
 }
 
 .elem h1 {
   font-size: 7rem;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
+
+#img-content {
+  width: 100%;
+  height: 55%;
+  background-color: pink;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#img-content::-webkit-scrollbar {
+  display: none;
+}
+
+#img-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  /* object-position: 20% 30%; */
+}
+
+#img-content > #img-3 {
+  object-position: 0% 25%;
+}
+
+#img-content > #img-2 {
+  object-position: 0% 25%;
+}
+
+
